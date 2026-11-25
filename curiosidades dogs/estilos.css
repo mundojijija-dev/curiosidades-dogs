@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #4f4f4f;
+  line-height: 1.6;
+}
+
+/* Barra superior verde azulado */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  border-top: 5px solid #0f766e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  background-color: #115e59;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Contenedor centrado */
+.contenedor {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 25px 20px 60px 20px;
+  text-align: center;
+}
+
+/* Separador visual entre razas */
+.separador-raza {
+  border: none;
+  border-top: 2px solid #eeeeee;
+  margin: 60px 0;
+}
+
+/* Galería de fotos */
+.galeria {
+  margin-bottom: 24px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+
+.galeria-controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.contador {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Textos principales */
+h1, .titulo-raza {
+  font-size: 32px;
+  font-weight: normal;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* Ficha técnica */
+.ficha-datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 35px 0;
+}
+
+.dato-caja {
+  flex: 1;
+  min-width: 140px;
+  background-color: #f8f9fa;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 16px 10px;
+}
+
+.dato-caja span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.dato-caja strong {
+  font-size: 15px;
+  color: #222;
+}
+
+/* Carrusel de Puntuación */
+.seccion-puntuacion {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.seccion-puntuacion h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+.carrusel-tarjetas {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.tarjeta {
+  min-width: 240px;
+  background-color: #f8f9fa;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.tarjeta h3 {
+  font-size: 16px;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+}
+
+.puntos {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.punto {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+}
+
+.punto.activo {
+  background-color: #0f766e;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #666;
+}
+
+.botones-carrusel {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn-flecha {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-flecha:hover {
+  background-color: #f0f0f0;
+}
